@@ -8,14 +8,14 @@
 
   <!-- ===================== GLIA SCRIPT (start) =====================
        Swap this block to change the Glia environment or snippet.
-       Beta environment, same pattern as the reference demo page. -->
+       Production Americas environment. -->
   <script>
     // Read idtoken from the query parameter of the same name.
     const params = new URLSearchParams(window.location.search);
     const idToken = params.get('idtoken');
     window.getGliaContext = () => ({ idToken });
   </script>
-  <script src="https://api.beta.glia.com/salemove_integration.js"></script>
+  <script async src="https://api.glia.com/salemove_integration.js" id="glia-integration"></script>
   <!-- ===================== GLIA SCRIPT (end) ======================= -->
 
   <style>
@@ -174,7 +174,8 @@
     });
 
     // Same pattern as the reference demo: record an event during an engagement.
-    if (window.sm) {
+    // The integration script loads async, so wait for it before calling sm.
+    function setupGlia() {
       sm.getApi({ version: 'v1' }).then(function (glia) {
         glia.addEventListener(glia.EVENTS.ENGAGEMENT_START, function (engagement) {
           document.getElementById('apply-now').addEventListener('click', function () {
@@ -182,6 +183,11 @@
           });
         });
       });
+    }
+    if (window.sm) {
+      setupGlia();
+    } else {
+      document.getElementById('glia-integration').addEventListener('load', setupGlia);
     }
   </script>
 </body>
