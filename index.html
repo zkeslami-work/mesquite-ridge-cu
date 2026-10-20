@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Mesquite Ridge Credit Union</title>
+
+  <!-- ===================== GLIA SCRIPT (start) =====================
+       Swap this block to change the Glia environment or snippet.
+       Beta environment, same pattern as the reference demo page. -->
+  <script>
+    // Read idtoken from the query parameter of the same name.
+    const params = new URLSearchParams(window.location.search);
+    const idToken = params.get('idtoken');
+    window.getGliaContext = () => ({ idToken });
+  </script>
+  <script src="https://api.beta.glia.com/salemove_integration.js"></script>
+  <!-- ===================== GLIA SCRIPT (end) ======================= -->
+
+  <style>
+    :root {
+      --brand: #7a2e1c;
+      --brand-dark: #5a2014;
+      --accent: #d9a441;
+      --ink: #222;
+      --muted: #5f6368;
+      --bg: #ffffff;
+      --bg-alt: #f6f3ee;
+      --line: #e3ddd3;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; color: var(--ink); background: var(--bg); line-height: 1.5; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: 1120px; margin: 0 auto; padding: 0 16px; }
+
+    .utility { background: var(--brand-dark); color: #f3e9e4; font-size: 13px; }
+    .utility .wrap { display: flex; justify-content: space-between; gap: 16px; padding-top: 6px; padding-bottom: 6px; flex-wrap: wrap; }
+    .utility a { color: #f3e9e4; margin-left: 16px; }
+
+    header { border-bottom: 1px solid var(--line); background: #fff; }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-top: 14px; padding-bottom: 14px; flex-wrap: wrap; }
+    .logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; color: var(--brand); }
+    .logo-mark { width: 36px; height: 36px; border-radius: 50%; background: var(--brand); color: var(--accent); display: grid; place-items: center; font-size: 16px; }
+    nav a { color: var(--ink); font-weight: 600; margin: 0 10px; font-size: 15px; }
+    .btn { display: inline-block; border: 0; border-radius: 4px; padding: 10px 18px; font-weight: 600; font-size: 15px; cursor: pointer; }
+    .btn-primary { background: var(--brand); color: #fff; }
+    .btn-primary:hover { background: var(--brand-dark); }
+    .btn-accent { background: var(--accent); color: #2b1a08; }
+    .btn-outline { background: transparent; color: #fff; border: 2px solid #fff; }
+
+    .hero { background: linear-gradient(120deg, var(--brand) 0%, #a5482d 100%); color: #fff; }
+    .hero .wrap { padding-top: 56px; padding-bottom: 56px; }
+    .hero h1 { font-size: 38px; margin: 0 0 8px; max-width: 640px; line-height: 1.2; }
+    .hero p { font-size: 18px; margin: 0 0 24px; max-width: 560px; color: #f6e9e3; }
+    .hero .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    .tiles { background: var(--bg-alt); }
+    .tiles .wrap { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; padding-top: 32px; padding-bottom: 32px; }
+    .tile { background: #fff; border: 1px solid var(--line); border-radius: 6px; padding: 20px; text-align: center; color: var(--ink); }
+    .tile:hover { border-color: var(--brand); text-decoration: none; }
+    .tile strong { display: block; color: var(--brand); font-size: 17px; margin-bottom: 4px; }
+    .tile span { font-size: 14px; color: var(--muted); }
+
+    section.content .wrap { padding-top: 40px; padding-bottom: 40px; display: grid; grid-template-columns: 2fr 1fr; gap: 32px; }
+    h2 { color: var(--brand); margin-top: 0; }
+    table { width: 100%; border-collapse: collapse; font-size: 15px; }
+    th, td { text-align: left; padding: 10px 8px; border-bottom: 1px solid var(--line); }
+    th { background: var(--bg-alt); }
+    .note { font-size: 13px; color: var(--muted); }
+    .card { background: var(--bg-alt); border-radius: 6px; padding: 20px; }
+
+    footer { background: #2a1a14; color: #d9cfc9; font-size: 14px; }
+    footer .wrap { padding-top: 32px; padding-bottom: 32px; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 24px; }
+    footer a { color: #d9cfc9; display: block; }
+    footer h4 { color: #fff; margin: 0 0 8px; }
+    .disclaimer { border-top: 1px solid #4a3a32; text-align: center; padding: 14px 16px; font-size: 13px; }
+
+    @media (max-width: 760px) {
+      nav { display: none; }
+      .hero h1 { font-size: 28px; }
+      section.content .wrap { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="utility">
+    <div class="wrap">
+      <span>Routing #000000000</span>
+      <span><a href="#">Locations &amp; ATMs</a><a href="#contact">Contact</a><a href="#">Careers</a></span>
+    </div>
+  </div>
+
+  <header>
+    <div class="wrap">
+      <a class="logo" href="#"><span class="logo-mark">MR</span>Mesquite Ridge Credit Union</a>
+      <nav>
+        <a href="#">Personal</a>
+        <a href="#">Business</a>
+        <a href="#">Loans</a>
+        <a href="#rates">Rates</a>
+        <a href="#">About</a>
+      </nav>
+      <button class="btn btn-primary" id="online-banking">Online Banking</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Auto loans from 5.49% APR*</h1>
+      <p>Get pre-approved in minutes and shop with confidence. Refinancing from another lender? We can help with that too.</p>
+      <div class="actions">
+        <button class="btn btn-accent" id="apply-now">Apply now</button>
+        <a class="btn btn-outline" href="#contact" id="contact-us">Contact us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="tiles">
+    <div class="wrap">
+      <a class="tile" href="#"><strong>Checking</strong><span>No monthly fee</span></a>
+      <a class="tile" href="#"><strong>Savings</strong><span>Grow your money</span></a>
+      <a class="tile" href="#"><strong>Auto Loans</strong><span>New, used, refi</span></a>
+      <a class="tile" href="#"><strong>Home Loans</strong><span>Buy or refinance</span></a>
+      <a class="tile" href="#"><strong>Credit Cards</strong><span>Rewards and low rate</span></a>
+    </div>
+  </section>
+
+  <section class="content" id="rates">
+    <div class="wrap">
+      <div>
+        <h2>Today's rates</h2>
+        <table>
+          <thead><tr><th>Product</th><th>Term</th><th>Rate</th></tr></thead>
+          <tbody>
+            <tr><td>New auto loan</td><td>Up to 60 months</td><td>5.49% APR</td></tr>
+            <tr><td>Used auto loan</td><td>Up to 60 months</td><td>5.99% APR</td></tr>
+            <tr><td>12-month certificate</td><td>12 months</td><td>4.10% APY</td></tr>
+            <tr><td>High-yield savings</td><td>No term</td><td>3.25% APY</td></tr>
+          </tbody>
+        </table>
+        <p class="note">*Sample rates for demonstration only. Not an offer of credit.</p>
+      </div>
+      <div class="card" id="contact">
+        <h2>We're here to help</h2>
+        <p>Chat with us using the button at the bottom of the page, or call our member service team.</p>
+        <p><strong>(555) 010-2468</strong><br>Mon to Fri, 8am to 6pm<br>Sat, 9am to 1pm</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div>
+        <h4>Mesquite Ridge Credit Union</h4>
+        1200 Example Ave<br>Anytown, TX 75000<br>(555) 010-2468
+      </div>
+      <div>
+        <h4>Members</h4>
+        <a href="#">Online Banking</a><a href="#">Mobile App</a><a href="#">Become a Member</a>
+      </div>
+      <div>
+        <h4>About</h4>
+        <a href="#">Our Story</a><a href="#">Community</a><a href="#">Privacy</a>
+      </div>
+    </div>
+    <div class="disclaimer">Demo site for Glia testing. Mesquite Ridge Credit Union is not a real financial institution.</div>
+  </footer>
+
+  <script>
+    document.getElementById('online-banking').addEventListener('click', function () {
+      alert('This is a demo site. Online Banking is not available.');
+    });
+
+    // Same pattern as the reference demo: record an event during an engagement.
+    if (window.sm) {
+      sm.getApi({ version: 'v1' }).then(function (glia) {
+        glia.addEventListener(glia.EVENTS.ENGAGEMENT_START, function (engagement) {
+          document.getElementById('apply-now').addEventListener('click', function () {
+            engagement.recordEvent({ message: 'Visitor clicked Apply now (auto loan)' });
+          });
+        });
+      });
+    }
+  </script>
+</body>
+</html>
